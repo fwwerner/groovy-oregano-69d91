@@ -38,7 +38,7 @@ export default class Body extends React.Component {
                             <meta key={meta_idx + '.1'} {...(attribute(key_name, _.get(meta, 'name', null)))} content={_.get(meta, 'value', null)}/>
                         )
                     })}
-                    <link rel="preload" type="font/woff2" href="/fonts/open-sans-v34-latin/open-sans-v34-latin-regular.woff2" />
+                    <link rel="preload" as="font/woff2" href="/fonts/open-sans-v34-latin/open-sans-v34-latin-regular.woff2" />
                     {_.get(this.props, 'data.config.favicon', null) && (
                     <link rel="icon" href={withPrefix(_.get(this.props, 'data.config.favicon', null))}/>
                     )}
